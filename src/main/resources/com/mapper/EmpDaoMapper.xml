@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.EmpDao">
+    <insert id="insert" parameterType="Emp">
+      insert into emps values (#{id},#{name},#{age},#{bir},#{sex},#{address})
+    </insert>
+    <delete id="delete" >
+        delete  from emps where id=#{id}
+    </delete>
+    <update id="update" parameterType="Emp">
+        update emps set name=#{name},age=#{age},bir=#{bir},sex=#{sex},address=#{address}
+        where id=#{id}
+    </update>
+    <select id="queryByPage" resultType="Emp">
+        select  id,name,age,bir,sex,address from  emps
+        limit #{start},#{rows}
+    </select>
+    <select id="queryTotal" resultType="long">
+        select count(id) from  emps
+    </select>
+    <delete id="deleteAll" >
+        delete  from emps where id in
+        <foreach collection="array"  open="(" item="item" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+    <select id="queryById" resultType="Emp">
+        select id,name,age,sex,bir,address from  emps
+        where id=#{id}
+    </select>
+
+</mapper>

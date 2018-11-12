@@ -1,0 +1,59 @@
+[
+  {
+    "id": "21",
+    "name": "研发部",
+    "createDate": "2012-12-12",
+    "number": 21,
+    "group": "A组"
+  },
+  {
+    "id": "24",
+    "name": "研发部-1",
+    "createDate": "2012-12-12",
+    "number": 21,
+    "group": "A组"
+  },
+  {
+    "id": "26",
+    "name": "研发部-1",
+    "createDate": "2012-12-12",
+    "number": 21,
+    "group": "A组"
+  },
+  {
+    "id": "27",
+    "name": "研发部-1",
+    "createDate": "2012-12-12",
+    "number": 21,
+    "group": "A组"
+  },
+  {
+    "id": "28",
+    "name": "研发部-1",
+    "createDate": "2012-12-12",
+    "number": 21,
+    "group": "A组"
+  },
+  {
+    "id": "229",
+    "name": "研发部-1",
+    "createDate": "2012-12-12",
+    "number": 21,
+    "group": "A组"
+  },
+  {
+    "id": "22",
+    "name": "项目部",
+    "createDate": "2012-12-12",
+    "number": 22,
+    "selected": true,
+    "group": "A组"
+  },
+  {
+    "id": "23",
+    "name": "爱心部",
+    "createDate": "2012-12-12",
+    "number": 20,
+    "group": "B组"
+  }
+]
